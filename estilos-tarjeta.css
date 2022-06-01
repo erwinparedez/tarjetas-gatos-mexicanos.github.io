@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+:root {
+  --color: rgb(58, 59, 65);
+  --texto-gris: rgb(188, 189, 214);
+  --resaltador: rgb(23, 219, 200);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #1c1c32, #292556, #1c1c32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* tarjetas */
+section {
+  width: 330px;
+  height: 570px;
+  color: white;
+  background-color: var(--color);
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px,
+    rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px,
+    rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+section:nth-child(1) {
+  position: relative;
+  z-index: 5;
+  left: 100px;
+  transform: rotate(-15deg);
+}
+section:nth-child(2) {
+  position: relative;
+  z-index: 10;
+}
+section:nth-child(3) {
+  position: relative;
+  z-index: 5;
+  right: 100px;
+  transform: rotate(15deg);
+}
+
+/* 1. Imagen de la tarjeta */
+.portada {
+  width: 300px;
+  height: 300px;
+  background-image: url("https://picnic.media/wp-content/uploads/2020/06/IMG_1345.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 20px;
+}
+#portada1 {
+  background-image: url("https://www.yaconic.com/wp-content/uploads/2020/07/Captura-de-Pantalla-2022-02-02-a-las-11.07.19.png");
+  background-position: center;
+}
+#portada2 {
+  background-image: url("https://picnic.media/wp-content/uploads/2020/06/IMG_1345.jpg");
+}
+#portada3 {
+  background-image: url("https://picnic.media/wp-content/uploads/2020/06/IMG_1340.jpg");
+}
+
+/* 2. Contenedor de toda la informacion */
+article {
+  padding: 0 12px;
+}
+
+/* 2.1. Contenedor de información principal */
+h2 {
+  padding: 20px 0 12px 0;
+}
+
+p {
+  font-size: 15px;
+  color: var(--texto-gris);
+  line-height: 20px;
+}
+
+/* 2.2. Contenedor de información extra */
+.extra-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 15px 0 10px 0;
+  border-bottom: 1px solid var(--texto-gris);
+}
+
+.extra-info p {
+  font-size: 12px;
+}
+
+.extra-info div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+/*icono del reloj*/
+.extra-info div:nth-child(2) img {
+  width: 18px;
+  height: 18px;
+}
+
+.extra-info b {
+  color: var(--resaltador);
+  margin-top: 2px;
+  font-weight: 800;
+}
+
+/* 2.3. Contenedor del creador o autor */
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.foto-perfil {
+  width: 38px;
+  height: 38px;
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+span {
+  color: white;
+}
