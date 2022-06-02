@@ -90,7 +90,7 @@ h2 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: var(--texto-gris);
   line-height: 20px;
 }
@@ -100,13 +100,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   padding: 15px 0 10px 0;
   border-bottom: 1px solid var(--texto-gris);
 }
 
 .extra-info p {
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .extra-info div {
